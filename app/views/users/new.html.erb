@@ -1,19 +1,19 @@
 <h1>Sign up</h1>
-
 <%= form_for @user do |f| %>
-<%= render 'shared/error_messages' %><br/>
-<%= f.label :name %>
-<%= f.text_field :name %><br/>
-
-<%= f.label :email %>
-<%= f.text_field :email %><br/> 
-
-<%= f.label :password %>
-<%= f.password_field :password %><br/> 
-
-<%= f.label :password_Confirmation %><br/>
-<%= f.password_field :password_confirmation %>
-
-<%= f.submit "Sign Up" %>
-<% end %> 
+  <%= render 'shared/error_messages' %><br/>
+  
+  <%= f.label :name %>
+  <%= f.text_field :name %><br/>
+  
+  <%= f.label :email %>
+  <%= f.text_field :email %><br/>
+  
+  <%= f.label :password %>
+  <%= f.password_field :password %><br/>
+  
+  <%= f.label :password_Confirmation %><br/>
+  <%= f.password_field :password_confirmation %>
+  
+  <%= f.submit "Sign Up" %>
+<% end %>
 <%= link_to "Has Account?", login_path %>
